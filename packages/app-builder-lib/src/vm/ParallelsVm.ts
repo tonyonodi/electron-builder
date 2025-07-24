@@ -54,7 +54,7 @@ export class ParallelsVmManager extends VmManager {
       throw new Error(`Please ensure that your are logged in "${this.vm.name}" parallels virtual machine. In the future please do not stop VM, but suspend.\n\n${error.message}`)
     }
 
-    log.warn("ensure that 'Share folders' is set to 'All Disks', see https://goo.gl/E6XphP")
+    log.warn("ensure that 'Share folders' is set to 'All Disks', see https://github.com/electron-userland/electron-builder/issues/2268#issuecomment-364464072")
     throw error
   }
 
